@@ -1,0 +1,78 @@
+<div style="width:500px;height:600px;border: 1px solid green;background-color:LightGray;margin:auto;">
+  <h2 style="text-align:center;
+  font-size:30px;
+  font-style: oblique;
+  color: teal;
+  background-color: thistle;">sign up</h2>
+<form action="signup.php" method="POST" name="myForm" onsubmit="return validateForm()" method="post" style="margin:auto;text-align:center;">
+
+  <p id="nameError" style="font-size:15px; color: red;"></p>
+  <p style="font-size:25px;">
+      <label> username</label>
+      <input type="text" id="newUserName" name="newUserName" required style="width:300px;
+      height:40px;
+      border: 1px solid black;
+      font-size:25px;">
+  </p>
+
+  <p id="emailError" style="font-size:15px; color: red;"></p>
+  <p style="font-size:25px;">
+      <label> The email  </label>
+      <input type="text" id="newUserEmail" name="newUserEmail" required style="width:300px;
+      height:40px;
+      border: 1px solid black;
+      font-size:25px;">
+  </p>
+
+  <p id="passError" style="font-size:15px; color: red;"></p>
+  <p style="font-size:25px;">
+      <label> password</label>
+      <input type="password" id="newUserPass" name="newUserPass" required style="width:300px;
+      height:40px;
+      border: 1px solid black;">
+  <p>
+   
+  <p id="roleError" style="font-size:15px; color: red;"></p>
+  <p style="font-size:25px;">
+      role:
+      <input type="radio" id="myAdmin" name="role" value="admin" />admin
+      <input type="radio" id="myStudent" name="role" value="student" />student
+      <br><br>
+  </p>
+     
+      <input type="submit" value="Submit" name="submit" onclick="signup.php" style="background-color:aliceblue;
+      width:300px;
+      height:40px;
+      border: 1px solid black;
+      font-size:25px;">
+  
+</form>
+</div>
+<script>
+  function validateForm() {
+    var n = document.forms["myForm"]["newUserName"].value;
+    var p = document.forms["myForm"]["newUserPass"].value;
+    var e = document.forms["myForm"]["newUserEmail"].value;
+    var r = document.forms["myForm"]["role"].value;
+    if (n == "") 
+    {
+      document.getElementById("nameError").innerHTML ="you must to enter your username";
+    }
+    
+    else if(e=="")
+    {
+      document.getElementById("emailError").innerHTML ="you must to enter your email";
+    }
+    else if(p=="")
+    {
+      document.getElementById("passError").innerHTML ="you must to enter your password";
+    }
+    else if((z!="admin")||(z!="student"))
+    {
+      document.getElementById("nameError").innerHTML ="you must to chose a role";
+    }
+    return false;
+    
+    }
+  
+</script>

@@ -1,0 +1,149 @@
+body {
+    
+    background-image: url(wallpaper.jpg);
+    background-size: 100% 100%;
+    height: 620px;
+  }
+
+  h1{
+    text-align:center;
+    font-size:70px;
+    font-style: oblique;
+    color: teal;
+    background-color: thistle;
+  }
+
+  #div1{
+      margin:auto;
+      text-align:center;
+  }
+
+  #signUp{
+    background-color:rgb(106, 60, 179);
+    width:300px;
+    height:40px;
+    border: 1px solid black;
+    font-size:25px;
+  }
+
+  #login{
+    background-color:rgb(106, 60, 179);
+    width:300px;
+    height:40px;
+    border: 1px solid black;
+    font-size:25px;
+  }
+  
+  #div2{
+      margin:auto;
+      text-align:center;
+  }
+  #div3{
+    margin:auto;
+    text-align:center;
+}
+#nameError{
+    font-size:25px;
+    color: red;
+}
+
+
+#admin_div
+{
+  background-color: black;
+  height: 300px;
+  width: 400px;
+  margin:auto;
+  text-align:left;
+}
+
+#student_div
+{
+  background-color: black;
+  height: 300px;
+  width: 400px;
+  margin:auto;
+  text-align:left;
+}
+
+li
+{
+  color: white;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a
+{
+  color: white;
+}
+
+a:hover
+{
+  color: aqua;
+}
+
+#update_div
+{
+  background-color: black;
+  margin:auto;
+  text-align:left;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+h3
+{
+  color: white;
+}
+
+#upper
+{
+  text-transform: uppercase;
+}
+
+#update_student_form
+{
+  margin:auto;
+  text-align:center;
+}
+
+#add_div
+{
+  background-color: black;
+  margin:auto;
+  text-align:left;
+  height: auto;
+  width: 600px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  margin-bottom: 80px;
+}
+
+#add_p
+{
+  color: white;
+}
+
+#update_book_div
+{
+  background-color: black;
+  margin:auto;
+  text-align:left;
+  height: auto;
+  width: 600px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  margin-bottom: 80px;
+}

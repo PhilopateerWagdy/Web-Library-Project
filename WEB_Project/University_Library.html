@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="JavaScript">
+        function newSignUp()
+        {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+                document.getElementById("div2").innerHTML = this.responseText;
+            }
+            };
+            xhttp.open("GET", "signUp.html", true);
+            xhttp.send();
+        }
+
+        function login()
+        {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+                document.getElementById("div3").innerHTML = this.responseText;
+            }
+            };
+            xhttp.open("GET", "login.html", true);
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <h1 >welcome to the Library</h1>
+    
+    <div id="div1">
+        <br> <br> <br>
+      <input type="button" id="signUp" onclick="newSignUp()" value="Sign up"> <br><br>
+      <div id ="div2"></div>
+      <br> <br> 
+      <input type="button" id="login" onclick="login()" value="login">
+      <br> <br>
+      <div id ="div3"></div>
+      <br> <br><br> <br><br> <br>
+
+    </div>
+
+
+</body>
+
+</html>
